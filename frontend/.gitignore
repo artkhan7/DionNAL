@@ -1,0 +1,11 @@
+!.gitkeep
+
+app/bower_components/
+app/css/
+app/assets/css
+app/img/generated/
+app/config.js
+
+build
+
+node_modules/

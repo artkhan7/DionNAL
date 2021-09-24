@@ -1,0 +1,20 @@
+{
+  "name": "pportal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "initdblocal": "rm -f db/pp.db && sqlite3 db/pp.db < sql/init.sql && npm run addlocalloaddata",
+    "addlocalloaddata": "sqlite3 db/pp.db < sql/test_load_data.sql"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "lodash-node": "^3.10.2",
+    "nodemon": "^1.12.1",
+    "sqlite3": "^3.1.13"
+  }
+}

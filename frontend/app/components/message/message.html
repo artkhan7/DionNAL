@@ -1,0 +1,15 @@
+<div>
+    <navigation-drctv></navigation-drctv>
+    <h2>Messages</h2>
+
+    <div>Message Count: {{pagination.count}}</div>
+    <ul>
+        <li ng-repeat='item in messages'>{{item}}</li>
+    </ul>
+
+    <div ng-if='currentPage != 1' ng-click='goPage(1)'>| 1</div>
+    <div ng-if='currentPage > 2' ng-click='goPage(currentPage - 1)'>< {{currentPage - 1}}</div>
+    <div>{{currentPage}}</div>
+    <div ng-if='currentPage < getTotalPageCount() - 1' ng-click='goPage(currentPage + 1)'>{{currentPage + 1}} ></div>
+    <div ng-if='currentPage != getTotalPageCount()' ng-click='goPage(getTotalPageCount())'>{{getTotalPageCount()}} |</div>
+</div>

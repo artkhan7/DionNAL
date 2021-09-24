@@ -1,0 +1,48 @@
+{
+  "bitwise": true,
+  "immed": true,
+  "newcap": true,
+  "noarg": true,
+  "noempty": true,
+  "nonew": true,
+  "trailing": true,
+  "maxlen": 200,
+  "boss": true,
+  "eqnull": true,
+  "expr": true,
+  "globalstrict": true,
+  "laxbreak": true,
+  "loopfunc": true,
+  "sub": true,
+  "undef": true,
+  "indent": 2,
+  "quotmark": "single",
+  "esversion": 6,
+  "globals": {
+    // jQuery
+    "$": false,
+
+    // Lodash
+    "_": false,
+
+    // Angular
+    "angular": false,
+
+    // Angular mocks
+    "module": false,
+    "inject": false,
+
+    // Jasmine
+    "jasmine": false,
+    "describe": false,
+    "beforeEach": false,
+    "afterEach": false,
+    "it": false,
+    "expect": false,
+
+    // Protractor
+    "browser": false,
+    "element": false,
+    "by": false
+  }
+}
