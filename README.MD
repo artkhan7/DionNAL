@@ -1,12 +1,19 @@
 DionNAL
 
-;;;run backend project
+##run backend project
+
 cd backend
+
 npm run initdblocal
+
 npm start
 
-;;;run frontend project
+
+##run frontend project
+
 cd frontend
+
 npm install && bower install
+
 npm start
 
